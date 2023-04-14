@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+      
+      <!--Radio group is used to group the radio buttons-->
+
+        <RadioGroup
+            android:id="@+id/die_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/four_sided_die_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4-rolls" />
+
+
+                <RadioButton
+                    android:id="@+id/six_sided_die_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6-rolls" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/eight_sided_die_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8-rolls" />
+
+                <RadioButton
+                    android:id="@+id/ten_sided_die_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-rolls" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <RadioButton
+                android:id="@+id/twelve_sided_die_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-rolls" />
+
+            <RadioButton
+                android:id="@+id/twenty_sided_die_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20-rolls" />
+            </LinearLayout>
+
+        </RadioGroup>
+      
+        <Spinner
+            android:id="@+id/custom_die_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+      <!--Edit text is used to get values from user-->
+        <EditText
+            android:id="@+id/custom_die_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of sides"
+            android:minHeight="48dp" />
+
+      <!--Button is used to roll-->
+        <Button
+            android:id="@+id/roll_button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Roll"/>
+
+        <!--checkbox is used to roll 2 dice-->
+        <CheckBox
+            android:id="@+id/roll_two_dice_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll two dice" />
+
+      <!--Switch is used to roll in tens-->
+        <Switch
+            android:id="@+id/roll_in_tens_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/roll_in_tens_label" />
+
+
+      <!--checkbox is used here to roll 10 sided die-->
+
+        <CheckBox
+            android:id="@+id/roll_ten_sided_die_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll ten-sided die (10, 20, 30...)" />
+
+      <!--checkbox is used here to roll true 10 sided die-->
+      
+        <CheckBox
+            android:id="@+id/true_ten_sided_die_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True 10-sided die (0-9)" />
+
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"/>
+        <ListView
+            android:id="@+id/previous_rolls_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
