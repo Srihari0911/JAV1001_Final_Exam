@@ -1,0 +1,27 @@
+<resources>
+    <string name="roll_in_tens_label">Roll in Tens</string>
+    <string name="app_name">Die App</string>
+    <string name="basic_dice">Basic Dice</string>
+    <string name="sides_4">4 Sides</string>
+    <string name="sides_6">6 Sides</string>
+    <string name="sides_8">8 Sides</string>
+    <string name="sides_10">10 Sides</string>
+    <string name="sides_12">12 Sides</string>
+    <string name="sides_20">20 Sides</string>
+    <string name="roll">Roll</string>
+    <string name="display_one">Display One Result</string>
+    <string name="display_two">Display Two Results</string>
+    <string name="roll_10s">10s Die</string>
+    <string name="true_10s">True 10s Die</string>
+    <string name="roll_10s_desc">Roll two 10-sided dice to get a number between 10 and 100</string>
+    <string name="true_10s_desc">Roll one 10-sided die to get a number between 0 and 9</string>
+    <string name="previous_rolls">Previous Rolls</string>
+        <string-array name="dice_numbers_array">
+            <item>4</item>
+            <item>6</item>
+            <item>8</item>
+            <item>10</item>
+            <item>12</item>
+            <item>20</item>
+        </string-array>
+</resources>
